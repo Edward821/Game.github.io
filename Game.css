@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    background: url(Background\ gif.gif);
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#board div {
+    width: 180px;
+    height: 180px;
+    background: url(Pipe.jpeg);
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+h2 {
+    text-align: center;
+    background: linear-gradient(to right, #d6e80b 20%, #f54b1c 40%, #d6e80b 60%, #ee0808 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1s linear infinite;
+
+}
+
+
+
+@keyframes animate {
+    to {
+        background-position: 200%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #board {
+        width: 420px;
+        height: 420px;
+    }
+
+    #board div {
+        width: 140px;
+        height: 140px;
+    }
+}
+    
+@media screen and (max-width: 650px) {
+    #board {
+        width: 360px;
+        height: 360px;
+    }
+
+    #board div {
+        width: 120px;
+        height: 120px;
+    }
+
+    #board div img {
+        width: 70px;
+        height: 70px;
+    }
+}
+    
+@media screen and (max-width: 550px) {
+    #board {
+        width: 210px;
+        height: 210px;
+    }
+
+    #board div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #board div img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+    
+
